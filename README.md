@@ -17,14 +17,14 @@ Here are some screenshots of the live application:
 ### 🖼️ UI Demo
 
 <p align="center">
-  <img src="img/frontend-ui_page-1.jpg" alt="Frontend UI 1" width="400"/>
-  <img src="img/frontend-ui_page-2.jpg" alt="Frontend UI 2" width="400"/>
+  <img src="demo/frontend-ui_page-1.jpg" alt="Frontend UI 1" width="800"/>
+  <img src="demo/frontend-ui_page-2.jpg" alt="Frontend UI 2" width="800"/>
 </p>
 
 ### 🖼️ UI Demo Result Page
 
 <p align="center">
-  <img src="img/result-ui_page.jpg" alt="Result UI" width="800" height="500"/>
+  <img src="demo/result-ui_page.jpg" alt="Result UI" width="800" height="500"/>
 </p>
 
 ---
