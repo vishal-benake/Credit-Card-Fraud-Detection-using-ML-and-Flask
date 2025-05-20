@@ -1,0 +1,4 @@
+data/creditcard.csv
+*.log
+__pycache__/
+venv/
