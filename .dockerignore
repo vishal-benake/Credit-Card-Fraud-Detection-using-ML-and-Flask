@@ -1,8 +1,13 @@
-myenv/
-__pycache__/
+# Prevent leakage of dev/code assets
+notebook/
+src/
+modules/
+*.ipynb
 *.pyc
+__pycache__/
 *.pkl
 *.joblib
 *.csv
-notebook/
+myenv/
 demo/
+!artifacts/model.pkl
