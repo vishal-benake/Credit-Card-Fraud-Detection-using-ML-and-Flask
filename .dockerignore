@@ -1,0 +1,8 @@
+myenv/
+__pycache__/
+*.pyc
+*.pkl
+*.joblib
+*.csv
+notebook/
+demo/

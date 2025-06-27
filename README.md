@@ -1,4 +1,3 @@
-
 # 🛡️ Credit Card Fraud Detection using ML and Flask
 
 This is a full-stack machine learning application that detects fraudulent credit card transactions using a trained Random Forest model, built with Scikit-learn and deployed via Flask. The project uses SMOTE for handling class imbalance, and a user-friendly web UI for predictions.
@@ -74,6 +73,55 @@ pip install -r requirements.txt
 
 ---
 
+## 🐳 Docker Support
+
+You can also run this application using Docker:
+
+1. **Build Docker Image**
+   ```bash
+   docker build -t credit-fraud-app .
+   ```
+
+2. **Run Container**
+   ```bash
+   docker run -p 5000:5000 credit-fraud-app
+   ```
+
+3. Open your browser at `http://localhost:5000`
+
+---
+
+## ☁️ AWS Elastic Beanstalk Deployment
+
+You can deploy this Dockerized Flask app to AWS Elastic Beanstalk:
+
+1. **Install Elastic Beanstalk CLI**
+   ```bash
+   pip install awsebcli
+   ```
+
+2. **Initialize EB CLI in your project**
+   ```bash
+   eb init -p docker credit-fraud-app
+   ```
+
+3. **Create environment**
+   ```bash
+   eb create fraud-env
+   ```
+
+4. **Deploy your application**
+   ```bash
+   eb deploy
+   ```
+
+5. **Open the app in browser**
+   ```bash
+   eb open
+   ```
+
+---
+
 ## <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/YouTube_full-color_icon_%282017%29.svg" width="20" height="20"> Youtube  
 <h4>If you like, do follow me on Youtube</h4>  
 <a href="https://www.youtube.com/@Code-With-Vishal">Connect with me on Youtube</a>
@@ -86,3 +134,4 @@ pip install -r requirements.txt
 
 © 2025 Vishal Benake. All rights reserved.  
 Unauthorized copying, distribution, or modification of this code is prohibited.
+---
