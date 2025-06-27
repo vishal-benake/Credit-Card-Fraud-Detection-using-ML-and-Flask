@@ -1,7 +1,7 @@
 
 # 🛡️ Credit Card Fraud Detection using ML and Flask
 
-This project is a full-stack machine learning application that detects fraudulent credit card transactions. It features a trained Random Forest model, preprocessing pipelines, a user-friendly Flask web interface, and visual performance reports.
+This is a full-stack machine learning application that detects fraudulent credit card transactions using a trained Random Forest model, built with Scikit-learn and deployed via Flask. The project uses SMOTE for handling class imbalance, and a user-friendly web UI for predictions.
 
 ---
 
@@ -17,73 +17,30 @@ Here are some screenshots of the live application:
 ### 🖼️ UI Demo
 
 <p align="center">
-  <img src="demo/frontend-ui_page-1.jpg" alt="Frontend UI 1" width="800"/>
-  <img src="demo/frontend-ui_page-2.jpg" alt="Frontend UI 2" width="800"/>
-</p>
-
-### 🖼️ UI Demo Result Page
-
-<p align="center">
-  <img src="demo/result-ui_page.jpg" alt="Result UI" width="800" height="500"/>
+  <img src="demo/demo1.jpg" alt="Frontend UI 1" width="800"/>
+  <img src="demo/demo2.jpg" alt="Frontend UI 2" width="800"/>
+  <img src="demo/demo3.jpg" alt="Frontend UI 3" width="800" height="500"/>
 </p>
 
 ---
 
-## 🧠 Machine Learning Overview
+## 🛠️ How to Use
 
-- **Model Used**: Random Forest Classifier  
-- **Preprocessing**: Done using Scikit-learn Pipelines and SMOTE for imbalance  
-- **Feature Handling**:
-  - Scaling with `StandardScaler`
-  - Handling class imbalance using SMOTE
-- **Evaluation Metrics**: Accuracy, Precision, Recall, F1-Score, Confusion Matrix
-
----
-
-## 🗂️ Project Structure
-
-```
-Credit_Card_Fraud_Detection_Project/
-│
-├── app.py                        # Flask application
-├── pipeline.py                   # Model training and pipeline
-├── model.pkl                     # Trained pipeline model
-├── requirements.txt              # Python dependencies
-│
-├── data/
-│   └── creditcard.csv            # Dataset 
-│
-├── notebook/
-│   ├── Credit_Card_Fraud_Detection_Project.ipynb
-│   └── Credit_Card_Fraud_Detection_Project.pdf            
-│
-├── templates/
-│   ├── index.html                # UI for input
-│   └── result.html               # Result display
-│
-├── modules/
-│   ├── model_evaluation.py
-│   └── model_training.py
-│
-├── demo/
-│   ├── frontend-ui_page-1.jpg
-│   ├── frontend-ui_page-2.jpg 
-│   └── result-ui_page.jpg
-```
----
-
-## 🛠️ Setup Instructions
+Follow these steps to set up and run the application:
 
 1. **Clone the repository**  
    ```bash
    git clone https://github.com/vishal-benake/Credit-Card-Fraud-Detection-using-ML-and-Flask.git
-   cd Credit-Card-Fraud-Detection-ML-Flask
+   cd Credit-Card-Fraud-Detection-using-ML-and-Flask
    ```
 
-2. **Create virtual environment (optional but recommended)**  
+2. **Create and activate virtual environment**  
    ```bash
    python -m venv venv
-   source venv/bin/activate    # On Windows: venv\Scripts\activate
+   # On Windows
+   venv\Scripts\activate
+   # On Mac/Linux
+   source venv/bin/activate
    ```
 
 3. **Install dependencies**  
@@ -91,22 +48,12 @@ Credit_Card_Fraud_Detection_Project/
    pip install -r requirements.txt
    ```
 
-4. **Run the Flask app**  
+4. **Run the application**  
    ```bash
    python app.py
    ```
 
 5. Open your browser and navigate to `http://127.0.0.1:5000`
-
----
-
-## 📈 Prediction Output
-
-- The app predicts whether a credit card transaction is fraudulent or legitimate.
-- A detailed result page shows:
-  - Input feature breakdown
-  - Confidence score (fraud probability)
-  - User-friendly messages based on prediction
 
 ---
 
@@ -120,7 +67,7 @@ Credit_Card_Fraud_Detection_Project/
 - joblib  
 - chart.js (for frontend charts)
 
-Install via:
+Install all with:
 ```bash
 pip install -r requirements.txt
 ```

@@ -1,6 +1,11 @@
-flask
 pandas
+numpy
 scikit-learn
+imbalanced-learn
 seaborn
+xgboost
 matplotlib
-joblib
+Flask
+dill
+
+-e .
